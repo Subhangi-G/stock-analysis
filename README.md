@@ -75,12 +75,12 @@ The returns for each unique stock were calculated using the above information, a
 ### The stock performance for 2017
 All the stocks,with the exception of TERP, gave positive returns. DQ did exceptionally well followed by ENPH and FSLR.
 
-
+![Analysis_2017](https://user-images.githubusercontent.com/71800628/116924006-ef5f6400-ac1c-11eb-8519-2132fcd09d47.png)
 
 ### The stock performance for 2018
 The returns for all stocks with the exceptions of ENPH and RUN were negative. Both ENPH and RUN had similar returns.
 
-
+![Analysis_2018](https://user-images.githubusercontent.com/71800628/116924054-fdad8000-ac1c-11eb-8782-51a957c6b5db.png)
 
 ### Comparison between the performance of the two years.
 
@@ -116,12 +116,15 @@ As there are 12 different tickers, and 3013 rows. Therefore, the rows are looped
 To shorten the time of execution, the code was refactored (see first code above) so that the looping over the of rows happened just once.\
 This significantly reduced the time taken to do the analyses for both years, as seen below.
 
+![RunTime-comparison_2017](https://user-images.githubusercontent.com/71800628/116924310-54b35500-ac1d-11eb-8250-0eebca0b4321.png)
+
+![RunTime-comparison_2018](https://user-images.githubusercontent.com/71800628/116924345-5e3cbd00-ac1d-11eb-9d1c-203fa4294a00.png)
 
 ## Summary
 
 1) Refactoring code may lead to significant reduction in time, and execute the code more efficiently. It may use less computer memory.
 It may make it easier for future users of the code to understand it, or may not depending on the refactoring.
 
-2)In these analyses refactoring the code reduced the time of execution by making the code more efficient.
+2) In these analyses refactoring the code reduced the time of execution by making the code more efficient.
 In the original code the loop went over all the rows even when the the data for the ticker of interest was collected. That was unnecessary repetition of looping over the rows.
 In the refactored code, the code loops over the rows only once, and collects the required data for the tickers as required and stores them in an array. 
